@@ -12,7 +12,7 @@ connectDB()
 app.get('/',(req,res)=>{
     res.send("hello world")
 })
-const port=7000
+const port=5003
 app.listen(port,()=>{
     console.log(`server is running on http://localhost:${port}`)
 })
