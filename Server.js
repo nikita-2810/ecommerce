@@ -4,6 +4,9 @@ const connectDB = require('./Config/db');
 const router = require('./Routes/authRoutes');
 const cartRouter = require('./Routes/cartRoutes');
 const app= express();
+
+const allowedOrigins=[ecommerce-frontend-6ck1j57av-nikita-anchatageri-s-projects.vercel.app,ecommerce-frontend-gamma-pearl.vercel.app]
+
 app.use(cors({
     origin: function (origin, callback) {
       if (!origin || allowedOrigins.includes(origin)) {
